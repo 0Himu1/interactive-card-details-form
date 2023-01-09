@@ -1,17 +1,22 @@
 input {
 	font-family: inherit;
+	font-size: 18px;
+	font-family: 'Space Grotesk', sans-serif;
 	font-size: 100%;
 	padding: 11px 16px;
-	border: 1px solid #44295e;
+	border: 1px solid #e0e0e0;
 	border-radius: 6px;
 	width: 100%;
-    margin-top: 9px;
+	margin-top: 9px;
+}
+input:focus {
+	border: 2px solid #44295e;
 }
 form {
 	height: 400px;
 	width: 400px;
 	padding: 10px;
-    margin-right: 10%;
+	margin-right: 10%;
 }
 label {
 	font-size: 12px;
@@ -34,19 +39,25 @@ label {
 	margin-bottom: 26px;
 }
 button {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 15px;
-    width: 100%;
-    background: #220930;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    transition: 500ms ease;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 15px;
+	width: 100%;
+	background: #220930;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	transition: 500ms ease;
 }
 button:hover {
-    background: #fff;
-    color: #220930;
-    border: 1px solid #220930;
+	background: #fff;
+	color: #220930;
+	border: 1px solid #220930;
+}
+
+@media screen and (max-width: 375px) {
+	form {
+		margin: 150px 0px 0px 0px;
+	}
 }

@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import './Styles/Form.css';
 
-export default function Form() {
+export default function Form({ changeHandler }) {
   return (
     <form>
       <div className="input">
         <label htmlFor="name">CARDHOLDER NAME</label>
-        <input type="text" />
+        <input type="text" onChange={changeHandler} />
       </div>
       <div className="input">
         <label htmlFor="cardNumber">CARD NUMBER</label>

@@ -9,5 +9,9 @@ body {
 	font-family: 'Space Grotesk', sans-serif;
 	overflow-x: hidden;
 }
-
+@media screen and (max-width: 375px) {
+	body {
+		width: 100vh;
+	}
+}
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');

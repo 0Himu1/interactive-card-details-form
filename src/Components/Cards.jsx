@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Styles/Cards.css';
 
-export default function Cards() {
+export default function Cards({ data }) {
   return (
     <div className="cardBox">
       <div className="front">
@@ -21,7 +22,7 @@ export default function Cards() {
         </div>
         <h1>1234 5678 9012 4321</h1>
         <div className="nameAndDate">
-          <p>Himu Nazmul</p>
+          <p>{data.name}</p>
           <p>09/00</p>
         </div>
       </div>
