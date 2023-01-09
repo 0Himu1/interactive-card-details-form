@@ -5,7 +5,7 @@
 	flex-direction: column;
 	padding: 18px;
 	height: 100vh;
-    width: 483px;
+	width: 483px;
 	background: url(../../Images/bg-main-desktop.png);
 	gap: 37px;
 }
@@ -19,7 +19,7 @@
 	height: 245px;
 	width: 447px;
 	background-repeat: no-repeat;
-    margin-right: -82%;
+	margin-right: -82%;
 }
 .img {
 	margin-top: 2px;
@@ -52,7 +52,7 @@ h1 {
 	width: 447px;
 	background-repeat: no-repeat;
 	position: relative;
-    margin-right: -134%;
+	margin-right: -134%;
 }
 
 .cvc {
@@ -63,4 +63,56 @@ h1 {
 	font-size: 16px;
 	font-weight: 400;
 	color: #000;
+}
+@media screen and (max-width: 375px) {
+	.cardBox {
+		flex-direction: column;
+		padding: 0px;
+		height: 240px;
+		width: 100vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.front {
+		display: block;
+		background-size: 100%;
+		padding: 18px 20px;
+		color: #fff;
+		height: 157px;
+		width: 286px;
+		margin: 0;
+		position: absolute;
+		top: 126px;
+		left: 220px;
+		z-index: 1;
+	}
+
+	.img {
+		margin-top: 2px;
+		height: 30px;
+		width: 56px;
+	}
+	h1 {
+		margin: 40px 0px 17px 0px;
+		font-size: 18px;
+	}
+	.nameAndDate {
+		font-size: 9px;
+	}
+	.back {
+		padding: 26px 32px;
+		height: 157px;
+		width: 286px;
+		margin-right: 0;
+		position: relative;
+		top: -10px;
+		left: 70px;
+	}
+	.cvc {
+		top: 69px;
+		right: 30px;
+		font-size: 14px;
+	}
 }
