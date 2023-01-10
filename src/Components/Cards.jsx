@@ -3,6 +3,10 @@ import React from 'react';
 import './Styles/Cards.css';
 
 export default function Cards({ data }) {
+  const {
+    name, cardNumber, month, year, cvc,
+  } = data;
+
   return (
     <div className="cardBox">
       <div className="front">
@@ -20,14 +24,14 @@ export default function Cards({ data }) {
             />
           </svg>
         </div>
-        <h1>1234 5678 9012 4321</h1>
+        <h1>{cardNumber.match(/.{1,4}/g).join(' ')}</h1>
         <div className="nameAndDate">
-          <p>{data.name}</p>
-          <p>09/00</p>
+          <p>{name}</p>
+          <p>{`${month}/${year}`}</p>
         </div>
       </div>
       <div className="back">
-        <p className="cvc">012</p>
+        <p className="cvc">{cvc}</p>
       </div>
     </div>
   );

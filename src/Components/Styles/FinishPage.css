@@ -1,0 +1,19 @@
+.column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	padding: 10px;
+	margin-right: 10%;
+}
+.title {
+	margin: 20px 0px 10px 0px;
+}
+.button {
+	margin-top: 40px;
+    width: 100%;
+}
+a {
+	text-decoration: none;
+}
